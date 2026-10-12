@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root{font-family:'DM Sans',sans-serif;color:#202b3c;background:#f4f6fa;font-synthesis:none;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.app{min-height:100vh}
+.sidebar{position:fixed;inset:0 auto 0 0;width:240px;background:#142237;color:#fff;padding:28px 18px;display:flex;flex-direction:column;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-size:20px;font-weight:800;margin-bottom:34px}
+.brand svg{color:#70d5bd}
+.side-label,.eyebrow{font-size:10px;font-weight:700;letter-spacing:1.6px;color:#8e9caf}
+.nav{display:flex;align-items:center;gap:12px;border:0;background:transparent;color:#bac6d6;text-align:left;padding:13px;border-radius:9px}
+.nav.active,.nav:hover{background:#263a54;color:#fff}
+.side-footer{margin-top:auto;color:#8293a9;font-size:12px;line-height:1.7}
+.main{margin-left:240px;padding:34px;max-width:1500px}
+.topbar,.panel-heading,.request-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+h1,h2,h3,p{margin-top:0}
+h1{font:800 30px Manrope,sans-serif;margin:8px 0 0}
+h2{font:700 18px Manrope,sans-serif;display:flex;align-items:center;gap:9px}
+.refresh{display:flex;align-items:center;gap:8px;background:white;border:1px solid #e0e6ef;padding:10px 14px;border-radius:9px;color:#34445b}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:26px 0}
+.stat{background:white;border:1px solid #e6eaf1;border-radius:14px;padding:20px;display:grid;grid-template-columns:30px 1fr;gap:5px 10px}
+.stat svg{color:#607d9f;grid-row:span 2;width:22px}
+.stat span{font-size:13px;color:#7c899c}.stat strong{font:800 26px Manrope,sans-serif}
+.panel{background:white;border:1px solid #e5eaf1;border-radius:14px;padding:24px;margin-bottom:22px}
+.request-form{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.request-form label,.admin-actions label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:600;color:#526176}
+.request-form input,.request-form select,.request-form textarea,.admin-actions select{width:100%;padding:11px 12px;border:1px solid #dce3ed;border-radius:8px;background:#fff;color:#25344a;outline-color:#58bba5}
+.request-form label:nth-child(4){grid-column:1/-1}
+.primary{grid-column:1/-1;justify-self:start;display:flex;align-items:center;gap:8px;background:#167e70;color:white;border:0;border-radius:9px;padding:12px 17px;font-weight:700}
+.notice{background:#e3f7ef;color:#17654f;border:1px solid #bdebd9;border-radius:9px;padding:12px 15px;margin-top:18px}
+.panel-heading{margin-bottom:18px}.panel-heading h2{margin:0}.panel-heading>span{font-size:12px;color:#748198;background:#f0f3f8;padding:6px 10px;border-radius:20px}
+.request-list{display:grid;gap:12px}
+.request{border:1px solid #e6eaf1;border-radius:11px;padding:17px}
+.request-top h3{font:700 16px Manrope,sans-serif;margin:7px 0 0}
+.request-id{font-size:10px;font-weight:700;letter-spacing:1px;color:#7e8ba0}
+.request>p{font-size:13px;color:#66758a;margin:14px 0}
+.status{font-size:10px;font-weight:800;padding:7px 10px;border-radius:20px;white-space:nowrap;background:#fff0d5;color:#986310}
+.status.in_progress{background:#e3efff;color:#285c9b}.status.resolved{background:#dff6eb;color:#16704f}
+.meta{display:flex;flex-wrap:wrap;gap:14px;color:#8290a2;font-size:11px}
+.admin-actions{margin-top:15px;max-width:220px}
+.empty{color:#7c899c;font-size:14px;padding:14px 0}
+@media(max-width:760px){.sidebar{position:static;width:100%;padding:16px;gap:7px}.brand{margin-bottom:10px}.side-label,.side-footer{display:none}.nav{padding:9px}.main{margin:0;padding:20px 14px}.topbar{align-items:flex-start}h1{font-size:23px}.stats{gap:8px}.stat{padding:12px;grid-template-columns:1fr}.stat svg{display:none}.stat strong{font-size:22px}.request-form{grid-template-columns:1fr}.request-form label:nth-child(4){grid-column:auto}.primary{grid-column:auto}.panel{padding:16px}}
